@@ -1,0 +1,22 @@
+# Files starting with dot
+.DS_Store
+.claude/
+.pytest_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Test files (files starting with test)
+test*.py
+tests/test_*.py
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
