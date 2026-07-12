@@ -30,6 +30,7 @@ class TestRegistry:
 
     def test_get_all_returns_registered_skills(self):
         r = Registry()
+        r._skills.clear()
         r.register(DemoSkill())
         all_skills = r.get_all()
         assert len(all_skills) == 1
