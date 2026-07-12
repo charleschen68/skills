@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "skills"
+version = "0.1.0"
+description = "A Python skills framework for agent discovery and invocation"
+requires-python = ">=3.13"
+
+[tool.setuptools.packages.find]
+include = ["core*", "gowork*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
