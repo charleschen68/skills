@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "name": "blog_summarize",
+      "description": "Summarize content and submit to blog as MDX. Analyzes content from a professional developer perspective, including background, personal thinking, and AI-specific insights. Uses first-person voice for findings, summaries, and suggestions.",
+      "path": "gowork/blog_summarize.py",
+      "class": "BlogSummarizeSkill",
+      "module": "gowork.blog_summarize",
+      "parameters": {
+        "content": {
+          "type": "string",
+          "description": "The content to summarize"
+        },
+        "title": {
+          "type": "string",
+          "description": "Optional article title. Defaults to 'AI Builders Digest YYYY-MM-DD'"
+        }
+      },
+      "returns": "SkillResult with success status and file path"
+    },
+    {
+      "name": "create_skill_demo",
+      "description": "Generate a new skill template file for agent imitation. Creates a new skill file in gowork/ with @register() decorator and standard Skill base class implementation.",
+      "path": "gowork/create_skill_demo.py",
+      "class": "CreateSkillDemoSkill",
+      "module": "gowork.create_skill_demo",
+      "parameters": {
+        "name": {
+          "type": "string",
+          "description": "Name of the new skill (used for class name and filename)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the new skill"
+        }
+      },
+      "returns": "SkillResult with the generated file path"
+    }
+  ]
+}
