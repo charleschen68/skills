@@ -45,7 +45,13 @@ Article body in Markdown...
    - **No `demo-` prefix** — descriptive name only
    - Tags in frontmatter: `['tag1', 'tag2', 'tag3']` array format
 
-5. **Publish** — Commit and push with git (do NOT use `npm run pub`; it reformats the whole repo and bypasses hooks). Run in `~/app/cocomoon/`:
+5. **Copy to knowledge base** — Save a copy of the article to the Jarvis knowledge base so it is searchable there:
+   ```bash
+   cp ~/app/cocomoon/data/blog/<article-file>.mdx ~/Documents/Jarvis/blog/<article-file>.md
+   ```
+   Note the extension changes from `.mdx` to `.md` (the knowledge base indexes markdown). Create `~/Documents/Jarvis/blog/` if it does not exist.
+
+6. **Publish** — Commit and push with git (do NOT use `npm run pub`; it reformats the whole repo and bypasses hooks). Run in `~/app/cocomoon/`:
    ```bash
    cd ~/app/cocomoon
    git add data/blog/<article-file>.mdx
