@@ -51,6 +51,11 @@ Article body in Markdown...
    ```
    Note the extension changes from `.mdx` to `.md` (the knowledge base indexes markdown). Create `~/Documents/Jarvis/blog/` if it does not exist.
 
+   Then refresh the QMD index (collection `jarvis-blog`) so the article is searchable:
+   ```bash
+   qmd update && qmd embed
+   ```
+
 6. **Publish** — Commit and push with git (do NOT use `npm run pub`; it reformats the whole repo and bypasses hooks). Run in `~/app/cocomoon/`:
    ```bash
    cd ~/app/cocomoon
