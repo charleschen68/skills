@@ -8,6 +8,7 @@ A collection of Claude Code skills for automated task execution and skill manage
 - `gowork/` — Skill implementations and utilities
 - `tests/` — Test files
 - `docs/` — Documentation
+- `<skill-name>/SKILL.md` — Claude Code agent skills, one top-level directory per skill (e.g. `blog-publish/`). Deploy by copying the directory to `~/.claude/skills/`.
 
 ## Features
 
