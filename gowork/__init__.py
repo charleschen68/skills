@@ -1,10 +1,9 @@
 # gowork/__init__.py
-"""User skills directory.
+"""User skills package.
 
-Import skills here for automatic registration.
+Agent skills are stored as ``gowork/<skill-name>/SKILL.md`` directories and are
+deployed by copying the complete skill directory to the target agent runtime.
+They are not imported into the legacy Python registry.
 """
 
-from gowork.blog_summarize import BlogSummarizeSkill
-from gowork.create_skill_demo import CreateSkillDemoSkill
-
-__all__ = ["BlogSummarizeSkill", "CreateSkillDemoSkill"]
+__all__: list[str] = []

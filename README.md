@@ -5,10 +5,9 @@ A collection of Claude Code skills for automated task execution and skill manage
 ## Structure
 
 - `core/` — Core skill framework (registry, registration, base classes)
-- `gowork/` — Skill implementations and utilities
+- `gowork/` — Skill implementations and utilities, including Claude Code agent skills as `gowork/<skill-name>/SKILL.md` (e.g. `gowork/blog-publish/`). Deploy an agent skill by copying its directory to `~/.claude/skills/`.
 - `tests/` — Test files
 - `docs/` — Documentation
-- `<skill-name>/SKILL.md` — Claude Code agent skills, one top-level directory per skill (e.g. `blog-publish/`). Deploy by copying the directory to `~/.claude/skills/`.
 
 ## Features
 
